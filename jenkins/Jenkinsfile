@@ -8,9 +8,9 @@ node {
 
     stage('Checkout') {
         git(
-            url: 'https://shivamsingh5@bitbucket.org/grid-os/grid-os-prodtools-gps-tracker-backend.git',
-            branch: 'dev_shivam_79154',
-            credentialsId: 'a9b403ea-206f-42fb-bc99-37fa1f65a305' // Use the correct credentials ID
+            url: 'https://github.com/ShivamSingh226/jenkins-test.git',
+            branch: 'main',
+            credentialsId: 'secret-key-git' // Use the correct credentials ID
         )
     }
 
