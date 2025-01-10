@@ -1,0 +1,58 @@
+version: "3.8"
+services:
+  mongodb:
+    image: 'mongo'
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes:
+      - data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - VTS_Network  
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockingfiles/backendVTS/Dockerfile
+    container_name: VTS_Backend
+    #ports:
+    # - '5000'
+    volumes:
+      - ../var/logs/VTS:/var/logs/VTS
+      - ./:/app
+      - node_modules:/app/node_modules
+    env_file:
+      - .env
+    depends_on:
+      - mongodb
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+        mode: "non-blocking" 
+    networks:
+      - VTS_Network    
+
+  nginx:
+    build: ./Dockingfiles/nginx
+      
+    container_name: VTS_Nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ./Dockingfiles/nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - backend
+    networks:
+      - VTS_Network        
+
+volumes:
+  data:
+  logs:
+  node_modules:
+networks:
+  VTS_Network:

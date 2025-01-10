@@ -1,0 +1,37 @@
+{
+  "savedBatches": [
+    {
+      "batchId": "hl59GK000001",
+      "id_prefix": "hl59GK",
+      "batch_size": 100,
+      "cartonSize": 50,
+      "createdBy": "672c90b780cd32c6786ae8cb",
+      "_id": "6768febfe1a7f952df73af51",
+      "__v": 0,
+      "createdAt": "2024-12-23T06:10:07.627Z",
+      "updatedAt": "2024-12-23T06:10:07.627Z"
+    }
+  ],
+  "savedCartons": [
+    {
+      "cartonId": "hl59GK000001-001",
+      "cartonSize": 50,
+      "batch_id": "6768febfe1a7f952df73af51",
+      "createdBy": "672c90b780cd32c6786ae8cb",
+      "_id": "6768febfe1a7f952df73af55",
+      "__v": 0,
+      "createdAt": "2024-12-23T06:10:07.641Z",
+      "updatedAt": "2024-12-23T06:10:07.641Z"
+    },
+    {
+      "cartonId": "hl59GK000001-002",
+      "cartonSize": 50,
+      "batch_id": "6768febfe1a7f952df73af51",
+      "createdBy": "672c90b780cd32c6786ae8cb",
+      "_id": "6768febfe1a7f952df73af56",
+      "__v": 0,
+      "createdAt": "2024-12-23T06:10:07.641Z",
+      "updatedAt": "2024-12-23T06:10:07.641Z"
+    }
+  ]
+}

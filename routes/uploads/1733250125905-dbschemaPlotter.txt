@@ -1,0 +1,26 @@
+Column Name	Data Type	Description
+vehicle_id	INT	Primary key, unique identifier for each vehicle
+vehicle_name	VARCHAR(50)	Name or description of the vehicle
+imei_number	VARCHAR(15)	IMEI number of the vehicle's tracking device
+
+
+
+3. DataPoints Table
+This table stores the speed and angle data for each vehicle at specific times.
+
+Column Name	Data Type	Description
+
+datapoint_id	INT	Primary key, unique identifier for each data point
+vehicle_id	INT	Foreign key, references vehicle_id in Vehicles table
+gps_fix_status	BOOLEAN	Status of the GPS fix (true if fixed, false otherwise)
+ignition	BOOLEAN	Status of the vehicle's ignition (true if on, false otherwise)
+mains	BOOLEAN	Status of the vehicle's mains (true if on, false otherwise)
+speed	DECIMAL(5,2)	Speed of the vehicle at the recorded time
+angle	DECIMAL(5,2)	Angle of the vehicle at the recorded time
+timestamp	DATETIME	The date and time when the data point was recorded
+latitude	DECIMAL(9,6)	Latitude of the vehicle's location
+longitude	DECIMAL(9,6)	Longitude of the vehicle's location
+battery	DECIMAL(5,2)	Battery level of the vehicle
+signal	DECIMAL(5,2)	Signal strength
+satellite	INT	Number of satellites in view
+odometer	DECIMAL(10,2)	Odometer reading

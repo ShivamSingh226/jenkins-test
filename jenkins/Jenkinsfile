@@ -1,0 +1,64 @@
+node {
+    def taskId = 'build-task'
+    def envFileContent
+
+    stage('Cleanup Workspace') {
+        deleteDir() // Clean up the workspace
+    }
+
+    stage('Checkout') {
+        git(
+            url: 'https://shivamsingh5@bitbucket.org/grid-os/grid-os-prodtools-gps-tracker-backend.git',
+            branch: 'dev_shivam_79154',
+            credentialsId: 'a9b403ea-206f-42fb-bc99-37fa1f65a305' // Use the correct credentials ID
+        )
+    }
+
+    stage('Create .env File') {
+        script {
+            if (!fileExists('.env')) {
+                withCredentials([file(credentialsId: 'env-file-backend', variable: 'ENV_FILE')]) {
+                     sh 'cp $ENV_FILE .env'
+                }
+                echo '.env file created'
+            } else {
+                echo '.env file already exists'
+            }
+        }
+    }
+
+    stage('Stop Containers') {
+        sh 'docker-compose down'
+    }
+
+    stage('Start New Containers') {
+        sh 'docker-compose up -d'
+    }
+
+    stage('Run Tests') {
+        // Your test steps here
+    }
+
+    post {
+        success {
+            emailext(
+                subject: "Build Successful: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: "Good news! The build ${env.JOB_NAME} #${env.BUILD_NUMBER} was successful.\n\nCheck the details at: ${env.BUILD_URL}",
+                recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
+                to: 'shivamsingh226@gmail.com'
+            )
+        }
+        failure {
+            emailext(
+                subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: "Unfortunately, the build ${env.JOB_NAME} #${env.BUILD_NUMBER} failed.\n\nCheck the details at: ${env.BUILD_URL}",
+                recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
+                to: 'shivamsingh226@gmail.com',
+                attachLog: true
+            )
+        }
+        always {
+            cleanWs()
+        }
+    }
+}

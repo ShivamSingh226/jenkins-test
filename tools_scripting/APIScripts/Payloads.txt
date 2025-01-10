@@ -1,0 +1,402 @@
+[
+  {
+    "stage": "Flash",
+    "imei": "000012856678126"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000009451406756"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000051454552793"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000001739414034"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000089237253541"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000035378250226"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000028479301465"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000089076625855"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000004458316021"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000021634159610"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000091090748702"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000018119882801"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000026511377307"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000043487346308"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000023762751386"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000066414665873"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000048516415566"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000078587211626"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000046366009287"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000087898354167"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000077216724404"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000082980322128"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000056300968019"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000075385707835"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000023558669377"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000084269740201"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000072985629045"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000010354417186"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000011377319912"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000024256107150"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000031"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000032"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000033"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000034"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000035"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000036"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000037"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000038"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000039"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000040"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000041"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000042"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000043"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000044"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000045"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000046"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000047"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000048"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000049"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000050"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000051"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000052"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000053"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000054"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000055"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000056"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000057"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000058"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000059"
+  },
+  {
+    "stage": "Flash",
+    "serial_No": "SN44314200000060"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0532153"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0799029"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0494530"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0239823"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0770749"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0036097"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0421618"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0442556"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0973545"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0075715"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0841482"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0400754"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0334547"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0710692"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0375724"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0120803"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0336068"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0316944"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0981936"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0313743"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0177604"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0213885"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0577968"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0504529"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0269000"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0704089"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0784290"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0795758"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0412277"
+  },
+  {
+    "stage": "Flash",
+    "deviceId": "GRD0189426"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000045390744722"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000060848470850"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000088272978541"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000025364314285"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000064302659292"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000095754588456"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000069370268293"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000063504277455"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000015550162866"
+  },
+  {
+    "stage": "Flash",
+    "imei": "000077240207832"
+  }
+]
