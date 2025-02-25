@@ -1,8 +1,0 @@
-1.Logs result:
-Device Reset -2 APN_CONFIG -Data Timeout
-Device Reset -5 GPRS_PDP_ACTIVATION - In the Callback if GPRS is Deactivated and it drops down
-Device Reset -13 if grid_gprsActState==1 and last_device_state_count!=0 but the elapsed time- time_taken_to_fix_TCP_socket_last was greater than the threshold time
-
-
-2.
-Same as of 1

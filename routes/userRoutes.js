@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 
 import { generateToken } from '../utils.js';
 import { isAuth } from '../utils.js';
+import { clearHash } from '../caching/cache.js';
 const userRouter = express.Router();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -173,12 +174,17 @@ userRouter.post('/create', upload.single('licenseKey'), async (req, res) => {
         };
       
         const user = new User(userData);
+        console.log(user);
         await user.save();
         const token = generateToken(user);
+        console.log(token);
         res.status(201).send({user,token});
     } catch (error) {
-        res.status(400).send(error);
+        console.error("Error Details:", error.message, error.stack);
+        res.status(400).json({ error: error.message });
     }
+    
+   
 });
 
 /**
@@ -359,11 +365,13 @@ userRouter.post('/login', async (req, res) => {
 // READ all Users
 userRouter.get('/all',isAuth, async (req, res) => {
     try {
-        const users = await User.find();
+        const users = await User.find().cache({key:req.user._id});
         res.status(200).send(users);
     } catch (error) {
         res.status(500).send(error);
     }
+    console.log(req.user._id);
+    clearHash(req.user._id)// Use it while POST route;
 });
 
 /**

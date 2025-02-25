@@ -12,7 +12,7 @@ import batchRouter from "./routes/batchRoutes.js"
 import logger from "./logger.js";
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express"
-
+import "./caching/cache.js"
 const app=express();
 dotenv.config();
 app.use((req, res, next) => {
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 });
 const allowedOrigins = [
   'http://localhost:5173',
-  'http://www.localhost',
+  'http://localhost:5000',
   'http://13.233.79.154'
 ];
 
@@ -57,7 +57,7 @@ const swaggerOptions = {
       },
       servers: [
         {
-            url: 'http://13.233.79.154/', // Base URL for your API
+            url: 'http://localhost:5000/', // Base URL for your API
             description: 'Local server'
         }
     ],
@@ -98,7 +98,7 @@ const authSource = 'admin';
 const MONGODB_URI = `mongodb://${username}:${password}@mongodb:27017/${dbName}?authSource=${authSource}`;
 const TEST_MONGODB_URI='mongodb://localhost:27017/gpstracker'
 // const MONGODB_URI = `mongodb://${username}:${password}@mongodb:27017/${dbName}?authSource=admin`;
-mongoose.connect(MONGODB_URI).then(()=>{
+mongoose.connect(TEST_MONGODB_URI).then(()=>{
     logger.info('Connected to DB');
     }).catch((err)=>{
       logger.info(err.message);

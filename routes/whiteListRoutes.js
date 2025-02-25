@@ -2,6 +2,8 @@ import express from 'express';
 import WhiteList from '../models/whiteListSchema.js'; // Adjust the path as necessary
 import { isAuth } from '../utils.js';
 import logger from '../logger.js';
+
+import cleanCache from '../caching/cleanCache.js';
 const whiteListRouter = express.Router();
 
 
@@ -123,7 +125,7 @@ const whiteListRouter = express.Router();
 
 
 // CREATE WhiteList entry
-whiteListRouter.post('/create', isAuth, async (req, res) => {
+whiteListRouter.post('/create', isAuth, cleanCache, async (req, res) => {
     try {
         const whiteListEntries = Array.isArray(req.body) ? req.body : [req.body];
         console.log("The array body is",whiteListEntries);        
@@ -218,6 +220,7 @@ whiteListRouter.post('/create', isAuth, async (req, res) => {
     } catch (error) {
         res.status(400).send(error);
     }
+
 });
 
 
@@ -298,7 +301,7 @@ whiteListRouter.post('/create', isAuth, async (req, res) => {
 // READ all WhiteList entries
 whiteListRouter.get('/all',isAuth, async (req, res) => {
     try {
-        const whiteListEntries = await WhiteList.find().populate('createdBy');
+        const whiteListEntries = await WhiteList.find().populate('createdBy').cache({key: req.user._id});
         res.status(200).send(whiteListEntries);
     } catch (error) {
         res.status(500).send(error);
